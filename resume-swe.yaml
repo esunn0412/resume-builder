@@ -36,8 +36,8 @@ experience:
     team: "Azure Platform Tooling Team"
     date: "May 2026 – Present"
     bullets:
-      - "Built the recommendations agent, multi-agent orchestrator, and *LLM-as-judge* deterministic evaluation harness — extending toward *LangSmith*-based tracing — for a multi-agent Azure cost assistant that detects idle and underutilized resources, targeting *\\$10M+* in identified annual savings across the org."
-      - "Resolved production authentication failures across mismatched credential chains and service-reachability gaps, then shipped the assistant as a tool on LinkedIn's internal AI-assistant platform by building its *MCP* server and local testing workflow."
+      - "Built the recommendations subagent, multi-agent orchestrator, and *LLM-as-judge* evaluation harness with *LangSmith*-based tracing for a multi-agent Azure cost assistant framework that detects idle and underutilized resources, targeting *\\$10M+* in identified annual savings across the org."
+      - "Resolved production authentication failures across mismatched credential chains and service-reachability gaps, then shipped the MCP plugin to LinkedIn's internal MCP server and local testing workflow."
       - "Designed hard, config-level routing enforcement for the project's multi-agent orchestrator and shipped a platform-level bug fix to the shared eval runner, unblocking every other team's test suite org-wide."
   - title: "Huddle Surety"
     role: "Founding Backend Engineer"
@@ -91,7 +91,7 @@ leadership:
     bullets:
       - "Co-founded Emory's first MLH-certified hackathon engaging 200+ participants; led the sponsorship team, securing *\\$20K+* from firms like Hyundai, JPMorgan, and Wolfram Alpha while building the official website with Next.js and TypeScript." # TODO: verify participant count vs. older materials before using
   - title: "Kubernetes (CNCF)"
-    role: "Kubernetes Org Member — Documentation Localization (SIG Docs)"
+    role: "Kubernetes Org Member: Documentation Localization (SIG Docs)"
     date: "Dec 2025 – Present"
     links:
       - label: "Contributor Card"
@@ -105,6 +105,6 @@ skills:
   - label: "Frameworks/Libs"
     items: "React, Next.js, Node.js, Django, REST, FastAPI, Flask, GraphQL, ReactFlow, Relay, Gradio, PostgreSQL"
   - label: "Tools"
-    items: "Git, Linux, Docker, Kubernetes, AWS, Jira, Gemini SDK, Claude SDK, GitHub Copilot"
+    items: "Git, Linux, Docker, AWS (S3, EC2, Amplify), GCP (Cloud Run/Build, Gemini), Azure, Jira, Gemini SDK"
   - label: "Certifications"
     items: "KodeKloud CKA (Certified Kubernetes Administrator) Course"

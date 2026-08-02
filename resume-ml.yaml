@@ -36,16 +36,16 @@ experience:
     team: "Azure Platform Tooling Team"
     date: "May 2026 – Present"
     bullets:
-      - "Built the recommendations agent, multi-agent orchestrator, and *LLM-as-judge* deterministic evaluation harness — extending toward *LangSmith*-based tracing — for a multi-agent Azure cost assistant that detects idle and underutilized resources, targeting *\\$10M+* in identified annual savings across the org."
+      - "Built the recommendations subagent, multi-agent orchestrator, and *LLM-as-judge* evaluation harness with *LangSmith*-based tracing for a multi-agent Azure cost assistant framework that detects idle and underutilized resources, targeting *\\$10M+* in identified annual savings across the org."
       - "Designed hard, config-level routing enforcement for the project's multi-agent orchestrator and shipped a platform-level bug fix to the shared eval runner, unblocking every other team's test suite org-wide."
   - title: "Emory NLP/Naver"
     role: "Researcher (collaboration with Naver Corporation)"
     date: "Dec 2025 – Present"
     bullets:
       - "Designed a short-term user-memory (interest) representation for a personalization research project, and fine-tuned *Qwen3-14B* (*LoRA* + groupwise *DPO*) with a custom multi-signal reward function to extract it from user interaction logs."
-      - "Diagnosed a reward-hacking failure mode causing the model to over-produce trivial single-evidence outputs, and redesigned the reward signal to fix it — recovering a verified improvement over baseline."
+      - "Diagnosed a reward-hacking failure mode causing the model to over-produce trivial single-evidence outputs, and redesigned the reward signal to fix it, recovering a verified improvement of 10% over baseline."
   - title: "Lablup"
-    role: "Research/Software Engineering Intern"
+    role: "AI Research Intern"
     date: "Jun 2025 – Aug 2025"
     bullets:
       - "Led GPU benchmarking and research automation, conducting *vLLM* performance analysis across Backend.AI's VM ecosystem to eliminate network-latency variables, verified performance consistency, and built an auto-benchmarking pipeline with per-request token throughput metrics."
