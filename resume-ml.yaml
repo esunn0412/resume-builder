@@ -1,0 +1,112 @@
+# ============================================================================
+# ML/AI RESEARCH-TARGETED RESUME — for ML research / AI research intern-type
+# roles. Prioritizes research contributions, model work, and quantified
+# research results. Sibling file: resume-swe.yaml (SWE angle).
+#
+# Rendered via resume-ml.typ -> resume-ml.pdf / .png
+# (see Makefile targets: `make ml-pdf`, `make ml-preview`, `make ml-watch`)
+# ============================================================================
+
+name: "Taeeun Kim"
+email: "taeeunk320@gmail.com"
+phone: "(470) 334-5599"
+address:
+  line1: "1762 Clifton Rd NE MSC 231162"
+  line2: "Atlanta, GA 30322"
+
+links:
+  - label: "Portfolio"
+    url: "https://taeeunkim.vercel.app/"
+  - label: "LinkedIn"
+    url: "https://linkedin.com/in/taeeunnkim/"
+  - label: "GitHub"
+    url: "https://github.com/esunn0412"
+
+education:
+  - institution: "Emory University"
+    degree: "Bachelor of Science in Mathematics and Computer Science"
+    detail: "4.0/4.0, 3x Dean's List"
+    date: "May 2027"
+    bullets:
+      - "Coursework: Data Structures and Algorithms, Machine Learning, Computer Vision, Database Systems, Computer Architecture, Linear Algebra, Multivariable Calculus"
+
+experience:
+  - title: "LinkedIn"
+    role: "Software Engineering Intern"
+    team: "Azure Platform Tooling Team"
+    date: "May 2026 – Present"
+    bullets:
+      - "Built the recommendations agent, multi-agent orchestrator, and *LLM-as-judge* deterministic evaluation harness — extending toward *LangSmith*-based tracing — for a multi-agent Azure cost assistant that detects idle and underutilized resources, targeting *\\$10M+* in identified annual savings across the org."
+      - "Designed hard, config-level routing enforcement for the project's multi-agent orchestrator and shipped a platform-level bug fix to the shared eval runner, unblocking every other team's test suite org-wide."
+  - title: "Emory NLP/Naver"
+    role: "Researcher (collaboration with Naver Corporation)"
+    date: "Dec 2025 – Present"
+    bullets:
+      - "Designed a short-term user-memory (interest) representation for a personalization research project, and fine-tuned *Qwen3-14B* (*LoRA* + groupwise *DPO*) with a custom multi-signal reward function to extract it from user interaction logs."
+      - "Diagnosed a reward-hacking failure mode causing the model to over-produce trivial single-evidence outputs, and redesigned the reward signal to fix it — recovering a verified improvement over baseline."
+  - title: "Lablup"
+    role: "Research/Software Engineering Intern"
+    date: "Jun 2025 – Aug 2025"
+    bullets:
+      - "Led GPU benchmarking and research automation, conducting *vLLM* performance analysis across Backend.AI's VM ecosystem to eliminate network-latency variables, verified performance consistency, and built an auto-benchmarking pipeline with per-request token throughput metrics."
+  - title: "Nell Hodgson Woodruff School of Nursing – MAIX Lab"
+    role: "AI Researcher"
+    date: "May 2025 – Dec 2025"
+    bullets:
+      - "Advanced multimodal ECG representation learning by integrating concept-based dictionaries into clinical report text embeddings, improving signal–report cross-modal alignment accuracy by 9% over the *MERL* approach."
+      - "Applied *FAISS* for scalable disease-concept retrieval, reducing retrieval latency by 65% over lexical methods."
+  - title: "Sionic AI"
+    role: "ML Research Intern"
+    date: "May 2024 – Jan 2025"
+    bullets:
+      - "Researched *hard negative mining* (HNM) strategies to improve contrastive learning for the company's *RAG* pipeline."
+      - "Boosted BGE-M3 fine-tuning by 4.87 points on Korean MTEB retrieval task with a positive-aware HNM strategy."
+      - "Fine-tuned pretrained models with *PyTorch*, achieving an 85.73 BLEU in Korean grammar error correction, outperforming SOTA models GPT-4 (75.03) and HCX-3 (71.24); published findings at PACLIC 38."
+
+projects:
+  - name: "Curaitor: AI-Powered Coursework Management Tool"
+    links:
+      - label: "GitHub"
+        url: "https://github.com/taeeunkim/curaitor" # TODO: replace with real repo URL
+      - label: "YouTube"
+        url: "https://youtube.com/watch?v=TODO" # TODO: replace with real video URL
+      - label: "Devpost"
+        url: "https://devpost.com/software/curaitor" # TODO: replace with real Devpost URL
+    bullets:
+      - "A highly concurrent automated local file organizer and processor as *Go* backend, using the *Actor Model* with goroutines and channels, *Gemini Go SDK*, and mutex-protected caching with JSON-backed models for persistence."
+      - "Expanded with *Next.js/React* frontend with *Typescript* and *Tailwind CSS* to display organized course materials, up-to-date quizzes and study guides, and interactive knowledge graphs across courses."
+  - name: "MBTI Dating Simulation App"
+    links:
+      - label: "GitHub"
+        url: "https://github.com/Dolbonln/MBTI-Date-Simulation"
+    bullets:
+      - "AI dating simulation app using a *Langflow*-based two-stage *RAG* pipeline to generate MBTI-personalized conversations, with dynamic, context-aware dialogue combining embedded personality traits with conversational memory."
+      - "Built with Python, Streamlit, Langflow, Claude API, Cohere, Pinecone, and Stable Diffusion."
+  - name: "Good Hangul"
+    links:
+      - label: "goodhangul.sionic.ai"
+        url: "https://goodhangul.sionic.ai"
+    bullets:
+      - "On-premise Korean grammar correction platform powered by finetuned #link(\"https://huggingface.co/TODO\")[nllb-200-ko-gec-3.3B] model hosted on *Amazon S3*, *Flask* API backend, *PocketBase* DB for collecting training data, and *Next.js/React/TypeScript* web interface."
+
+leadership:
+  - title: "Project Emory"
+    role: "President"
+    date: "Aug 2023 – Present"
+    bullets:
+      - "Manage 3 project teams of 20+ Emory student engineers building software for on-campus initiatives in collaboration with faculty."
+  - title: "Emory Hacks"
+    role: "Co-Founder"
+    date: "Aug 2023 – Present"
+    bullets:
+      - "Co-founded Emory's first MLH-certified hackathon engaging 200+ participants; led the sponsorship team, securing *\\$20K+* from firms like Hyundai, JPMorgan, and Wolfram Alpha." # TODO: verify participant count vs. older materials before using
+
+skills:
+  - label: "Languages"
+    items: "Python, Go, Java, JavaScript/Typescript, SQL, C, HTML, CSS, Shell Script"
+  - label: "ML/AI"
+    items: "PyTorch, LoRA, DPO, RAG, FAISS, Hugging Face, Qwen3, LLM-as-judge evaluation, Pandas, Claude SDK, GitHub Copilot"
+  - label: "Frameworks/Libs"
+    items: "React, Next.js, Node.js, Django, FastAPI, GraphQL, Nginx, PostgreSQL"
+  - label: "Tools"
+    items: "Git, Linux, Docker, AWS (S3, EC2, Amplify), GCP (Cloud Run/Build, Gemini), Azure, Jira, Gemini SDK"

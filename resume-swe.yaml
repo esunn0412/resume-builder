@@ -1,0 +1,110 @@
+# ============================================================================
+# SWE-TARGETED RESUME — for full-stack / backend / platform software
+# engineering roles. Prioritizes production/shipping impact, infra, and
+# engineering breadth. Sibling file: resume-ml.yaml (ML/AI research angle).
+#
+# Rendered via resume-swe.typ -> resume-swe.pdf / .png
+# (see Makefile targets: `make swe-pdf`, `make swe-preview`, `make swe-watch`)
+# ============================================================================
+
+name: "Taeeun Kim"
+email: "taeeunk320@gmail.com"
+phone: "(470) 334-5599"
+address:
+  line1: "1762 Clifton Rd NE MSC 231162"
+  line2: "Atlanta, GA 30322"
+
+links:
+  - label: "Portfolio"
+    url: "https://taeeunkim.vercel.app/"
+  - label: "LinkedIn"
+    url: "https://linkedin.com/in/taeeunnkim/"
+  - label: "GitHub"
+    url: "https://github.com/esunn0412"
+
+education:
+  - institution: "Emory University"
+    degree: "Bachelor of Science in Mathematics and Computer Science"
+    detail: "4.0/4.0, 3x Dean's List"
+    date: "May 2027"
+    bullets:
+      - "Coursework: Data Structures and Algorithms, Machine Learning, Computer Vision, Database Systems, Computer Architecture, Linear Algebra, Multivariable Calculus"
+
+experience:
+  - title: "LinkedIn"
+    role: "Software Engineering Intern"
+    team: "Azure Platform Tooling Team"
+    date: "May 2026 – Present"
+    bullets:
+      - "Built the recommendations agent, multi-agent orchestrator, and *LLM-as-judge* deterministic evaluation harness — extending toward *LangSmith*-based tracing — for a multi-agent Azure cost assistant that detects idle and underutilized resources, targeting *\\$10M+* in identified annual savings across the org."
+      - "Resolved production authentication failures across mismatched credential chains and service-reachability gaps, then shipped the assistant as a tool on LinkedIn's internal AI-assistant platform by building its *MCP* server and local testing workflow."
+      - "Designed hard, config-level routing enforcement for the project's multi-agent orchestrator and shipped a platform-level bug fix to the shared eval runner, unblocking every other team's test suite org-wide."
+  - title: "Huddle Surety"
+    role: "Founding Backend Engineer"
+    date: "Jan 2026 – Jul 2026"
+    bullets:
+      - "Designed and built the core *Go* REST API with role-based access control (*RBAC*) and *Redis* caching for a production AI-powered surety bond automation platform."
+      - "Used *Temporal* to orchestrate backend communication for multi-stage *RAG* pipelines generating bond documents, alongside audit-logging and authentication/authorization workflows."
+      - "Built *PostgreSQL* data systems for contractor-agent management, and *OpenTelemetry* metrics and dashboards for service-level observability."
+  - title: "Lablup"
+    role: "Software Engineering Intern"
+    date: "Jun 2025 – Aug 2025"
+    bullets:
+      - "Developed and deployed PyCon 2025 booth event page with *Next.js*, *Tailwind*, *Shadcn UI*, *Google Apps Script*, and *AWS Amplify*, supporting 228 participants across 1,193 submissions."
+      - "Shipped multi-selection and bulk-deletion features with *GraphQL* and *React/Relay* for *Backend.AI FastTrack*'s batch job workflow management service, streamlining pipeline job management for users."
+  - title: "Sionic AI"
+    role: "ML Research Intern"
+    date: "May 2024 – Jan 2025"
+    bullets:
+      - "Researched *hard negative mining* (HNM) strategies to improve contrastive learning for the company's *RAG* pipeline."
+      - "Fine-tuned pretrained models with *PyTorch*, achieving an 85.73 BLEU in Korean grammar error correction, outperforming SOTA models GPT-4 and HCX-3; published findings at PACLIC 38."
+
+projects:
+  - name: "Curaitor: AI-Powered Coursework Management Tool"
+    links:
+      - label: "GitHub"
+        url: "https://github.com/taeeunkim/curaitor" # TODO: replace with real repo URL
+      - label: "YouTube"
+        url: "https://youtube.com/watch?v=TODO" # TODO: replace with real video URL
+      - label: "Devpost"
+        url: "https://devpost.com/software/curaitor" # TODO: replace with real Devpost URL
+    bullets:
+      - "A highly concurrent automated local file organizer and processor as *Go* backend, using the *Actor Model* with goroutines and channels, *Gemini Go SDK*, and mutex-protected caching with JSON-backed models for persistence."
+      - "Expanded with *Next.js/React* frontend with *Typescript* and *Tailwind CSS* to display organized course materials, up-to-date quizzes and study guides, and interactive knowledge graphs across courses."
+  - name: "Good Hangul"
+    links:
+      - label: "goodhangul.sionic.ai"
+        url: "https://goodhangul.sionic.ai"
+    bullets:
+      - "On-premise Korean grammar correction platform powered by finetuned #link(\"https://huggingface.co/TODO\")[nllb-200-ko-gec-3.3B] model hosted on *Amazon S3*, *Flask* API backend, *PocketBase* DB for collecting training data, and *Next.js/React/TypeScript* web interface."
+      - "Corresponding Chrome Extension that automatically detects inputs and displays correction retrieved from koGEC API."
+
+leadership:
+  - title: "Project Emory"
+    role: "President"
+    date: "Aug 2023 – Present"
+    bullets:
+      - "Manage 3 project teams of 20+ Emory student engineers building software for on-campus initiatives in collaboration with faculty."
+  - title: "Emory Hacks"
+    role: "Co-Founder"
+    date: "Aug 2023 – Present"
+    bullets:
+      - "Co-founded Emory's first MLH-certified hackathon engaging 200+ participants; led the sponsorship team, securing *\\$20K+* from firms like Hyundai, JPMorgan, and Wolfram Alpha while building the official website with Next.js and TypeScript." # TODO: verify participant count vs. older materials before using
+  - title: "Kubernetes (CNCF)"
+    role: "Kubernetes Org Member — Documentation Localization (SIG Docs)"
+    date: "Dec 2025 – Present"
+    links:
+      - label: "Contributor Card"
+        url: "https://contribcard.cncf.io/esunn0412"
+    bullets:
+      - "Contributed extensively to kubernetes/website's Korean localization, most notably a full translation of the Gateway API networking concepts page, among numerous other documentation and reference fixes."
+
+skills:
+  - label: "Languages"
+    items: "Go, Java, Python, JavaScript/Typescript, SQL, C, HTML, CSS, Bash/Zsh, ARM assembly"
+  - label: "Frameworks/Libs"
+    items: "React, Next.js, Node.js, Django, REST, FastAPI, Flask, GraphQL, ReactFlow, Relay, Gradio, PostgreSQL"
+  - label: "Tools"
+    items: "Git, Linux, Docker, Kubernetes, AWS, Jira, Gemini SDK, Claude SDK, GitHub Copilot"
+  - label: "Certifications"
+    items: "KodeKloud CKA (Certified Kubernetes Administrator) Course"
