@@ -89,7 +89,7 @@ leadership:
     role: "Co-Founder"
     date: "Aug 2023 – Present"
     bullets:
-      - "Co-founded Emory's first MLH-certified hackathon engaging 200+ participants; led the sponsorship team, securing *\\$20K+* from firms like Hyundai, JPMorgan, and Wolfram Alpha while building the official website with Next.js and TypeScript." # TODO: verify participant count vs. older materials before using
+      - "Co-founded Emory's first MLH-certified hackathon engaging 200+ participants; led the sponsorship team, securing *\\$20K+* from firms like Hyundai, JPMorgan, and Wolfram Alpha while building the official website with *Next.js* and *Motion*." # TODO: verify participant count vs. older materials before using
   - title: "Kubernetes (CNCF)"
     role: "Kubernetes Org Member: Documentation Localization (SIG Docs)"
     date: "Dec 2025 – Present"
@@ -97,7 +97,7 @@ leadership:
       - label: "Contributor Card"
         url: "https://contribcard.cncf.io/esunn0412"
     bullets:
-      - "Contributed extensively to kubernetes/website's Korean localization, most notably a full translation of the Gateway API networking concepts page, among numerous other documentation and reference fixes."
+      - "Contributed extensively to *kubernetes SIG Docs* Korean localization, most notably a full translation of the Gateway API networking concepts page, among numerous other documentation and reference fixes."
 
 skills:
   - label: "Languages"
