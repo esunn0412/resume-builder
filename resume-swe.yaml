@@ -36,9 +36,9 @@ experience:
     team: "Azure Platform Tooling Team"
     date: "May 2026 – Present"
     bullets:
-      - "Built the recommendations subagent, multi-agent orchestrator, and *LLM-as-judge* evaluation harness with *LangSmith*-based tracing for a multi-agent Azure cost assistant framework that detects idle and underutilized resources, targeting *\\$10M+* in identified annual savings across the org."
-      - "Resolved production authentication failures across mismatched credential chains and service-reachability gaps, then shipped the MCP plugin to LinkedIn's internal MCP server and local testing workflow."
-      - "Designed hard, config-level routing enforcement for the project's multi-agent orchestrator and shipped a platform-level bug fix to the shared eval runner, unblocking every other team's test suite org-wide."
+      - "Shipped a multi-agent orchestrator coordinating four specialized subagents and developed its idle-resource detection and recommendations subagent using *MCP tools* backed by the Azure Metrics API and a *gRPC* recommendations API, targeting *\\$10M+* in identified annual infrastructure savings."
+      - "Created an end-to-end live evaluation harness from scratch with deterministic evaluators, optional *LLM-as-judge* scoring, and *LangSmith* based tracing and UI workflows."
+      - "Contributed multiple platform-level improvements during LinkedIn's Copilot migration, including proper tracing configuration, evaluation support for *Copilot SDK*-based agents, and a shared eval-runner fix that unblocked test suites across teams."
   - title: "Huddle Surety"
     role: "Founding Backend Engineer"
     date: "Jan 2026 – Jul 2026"
@@ -63,9 +63,9 @@ projects:
   - name: "Curaitor: AI-Powered Coursework Management Tool"
     links:
       - label: "GitHub"
-        url: "https://github.com/taeeunkim/curaitor" # TODO: replace with real repo URL
+        url: "https://github.com/esunn0412/curaitor" # TODO: replace with real repo URL
       - label: "YouTube"
-        url: "https://youtube.com/watch?v=TODO" # TODO: replace with real video URL
+        url: "https://www.youtube.com/watch?v=K8gPQnf_zXk&t=1s" # TODO: replace with real video URL
       - label: "Devpost"
         url: "https://devpost.com/software/curaitor" # TODO: replace with real Devpost URL
     bullets:
