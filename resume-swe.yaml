@@ -76,7 +76,7 @@ projects:
       - label: "goodhangul.sionic.ai"
         url: "https://goodhangul.sionic.ai"
     bullets:
-      - "On-premise Korean grammar correction platform powered by finetuned #link(\"https://huggingface.co/TODO\")[nllb-200-ko-gec-3.3B] model hosted on *Amazon S3*, *Flask* API backend, *PocketBase* DB for collecting training data, and *Next.js/React/TypeScript* web interface."
+      - "On-premise Korean grammar correction platform powered by finetuned #link(\"https://huggingface.co/sionic-ai/nllb-200-ko-gec-3.3B\")[nllb-200-ko-gec-3.3B] model hosted on *Amazon S3*, *Flask* API backend, *PocketBase* DB for collecting training data, and *Next.js/React/TypeScript* web interface."
       - "Corresponding Chrome Extension that automatically detects inputs and displays correction retrieved from koGEC API."
 
 leadership:
